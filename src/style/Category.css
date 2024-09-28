@@ -1,9 +1,16 @@
+@media screen and (max-width: 950px) {  .category{ padding: 0 0.5rem; }  }
+@media screen and (min-width: 950px) {  .category{ padding: 0 5rem; }  }
 .category{
-    background-color: lightskyblue;
+    background-color: #61dafb;
     grid-area: category;
     width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 }
 .category > ul{
+    max-width: 1000px;
+    width: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -14,21 +21,22 @@
 }
 .category > ul::-webkit-scrollbar{ display:none; }
 .category >ul> li{
-    background-color: powderblue;
-    margin: 0 0.5rem;
-    font-size: 1.5rem;
+    background-color: #61dafb;
+    margin-right: 1rem;
+    font-size: 1.2rem;
     box-sizing: border-box;
 }
 .category >ul>li>a{
-    display: flex;
+    font-weight: 600;
+    display: inline-flex;
     align-items: center;
     height: 100%;
-    margin: 0 0.5rem;
     box-sizing: border-box;
+    position: relative;
 }
-.cate-name{
-    text-decoration-line: none;
-}
+.category>ul>li>.selected>span{ color: #222; }
+.category>ul>li>a>span{ color:gray; }
+.cate-name{ text-decoration-line: none; }
 .cate-name:link{ color: black; }
 .cate-name:visited{ color: black; }
-.selected{ font-weight: bold }
+.selected{ border-bottom: 2px solid #222; }

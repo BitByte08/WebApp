@@ -1,0 +1,12 @@
+.main{
+  height: calc(100vh - 8rem);
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 3rem 1fr;
+  grid-template-areas:
+            "category"
+            "content";
+}
+.content{
+  grid-area: content;
+}

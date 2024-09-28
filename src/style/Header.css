@@ -1,3 +1,5 @@
+@media screen and (min-width: 950px){  .header{ padding: 0 5rem; }  }
+@media screen and (max-width: 950px){  .header{ padding: 0 0.5rem; }  }
 .header{
     position: sticky;
     top: 0;
@@ -5,10 +7,19 @@
     right: 0;
     background-color: #61dafb;
     height: 8rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.contents{
+    width: 100%;
+    max-width: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
 }
+.logo{ text-decoration-line: none; }
+.logo:link{ color: black; }
+.logo:visited{ color: black; }
