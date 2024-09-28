@@ -1,0 +1,34 @@
+.category{
+    background-color: lightskyblue;
+    grid-area: category;
+    width: 100vw;
+}
+.category > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+}
+.category > ul::-webkit-scrollbar{ display:none; }
+.category >ul> li{
+    background-color: powderblue;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+.category >ul>li>a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 0.5rem;
+    box-sizing: border-box;
+}
+.cate-name{
+    text-decoration-line: none;
+}
+.cate-name:link{ color: black; }
+.cate-name:visited{ color: black; }
+.selected{ font-weight: bold }

@@ -1,0 +1,14 @@
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #61dafb;
+    height: 8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
